@@ -4,7 +4,7 @@ Simulação feita no [Wokwi](https://wokwi.com) que converte um número decimal 
 
 🔗 Projeto original: https://wokwi.com/projects/472751858971122689
 
-## 💡 Como funciona
+## Como funciona
 
 O programa roda em loop infinito e, a cada execução:
 
@@ -17,7 +17,7 @@ O programa roda em loop infinito e, a cada execução:
 
 Se o valor digitado estiver fora do intervalo de 0 a 15, o programa exibe a mensagem `Valor Inválido`.
 
-## 🧰 Componentes utilizados
+## Componentes utilizados
 
 | Componente | Quantidade | Função |
 |---|---|---|
@@ -26,7 +26,7 @@ Se o valor digitado estiver fora do intervalo de 0 a 15, o programa exibe a mens
 | Resistor 220Ω | 4 | Proteção dos LEDs |
 | Protoboard | 1 | Montagem do circuito |
 
-## 🔌 Conexões (pinos do Pico)
+## Conexões (pinos do Pico)
 
 | LED | Pino GPIO | Bit representado |
 |---|---|---|
@@ -37,7 +37,15 @@ Se o valor digitado estiver fora do intervalo de 0 a 15, o programa exibe a mens
 
 Cada LED é ligado em série com um resistor de 220Ω até o GND da protoboard.
 
-## 📁 Estrutura do projeto
+##  Diagrama do circuito
+
+<img width="822" height="496" alt="chrome_slGhjHKLfE" src="https://github.com/user-attachments/assets/991f1a7c-468c-47be-b2d9-bdf61ee43509" />
+
+## Execução do Projeto
+
+<img width="1920" height="911" alt="chrome_jKTH9Q8ACC" src="https://github.com/user-attachments/assets/8c0e2580-615f-4507-a1f8-d182e4ebf66c" />
+
+## Estrutura do projeto
 
 ```
 .
@@ -46,13 +54,13 @@ Cada LED é ligado em série com um resistor de 220Ω até o GND da protoboard.
 └── wokwi-project.txt   # Link de origem do projeto no Wokwi
 ```
 
-## ▶️ Como executar
+## Como executar
 
 1. Acesse o [Wokwi](https://wokwi.com) e crie um novo projeto para Raspberry Pi Pico.
 2. Substitua o `main.py` e o `diagram.json` pelos arquivos deste repositório.
 3. Inicie a simulação e digite números de 0 a 15 no terminal serial para ver o resultado.
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - **MicroPython** (ambiente `micropython-20260406-v1.28.0`)
 - **Wokwi** (simulador de circuitos eletrônicos)
